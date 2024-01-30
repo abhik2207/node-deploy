@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node JS + Express JS</title>
+    <script src="https://kit.fontawesome.com/cdfe9b316a.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+            width: 100vw;
+            height: 100vh;
+            background-color: #dbdbdb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #card {
+            background-color: #fff;
+            border-radius: 30px;
+            width: 500px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px #000;
+        }
+
+        #image-div {
+            height: 70%;
+            width: 100%;
+        }
+
+        #cover-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #upper-div {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        #product-name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #product-price {
+            display: flex;
+            color: #00b400;
+        }
+
+        #lower-div {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        #rating-div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #rating-div > i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        #rating-div > h5 {
+            font-size: 15px;
+        }
+
+        #buy-div {
+            display: flex;
+            align-items: center;
+        }
+
+        #buy-div > h6 {
+            color: #ff0000;
+            font-size: 15px;
+        }
+
+        #buy {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 7px 10px;
+            border-radius: 50px;
+            background-color: rgb(255, 115, 0);
+            color: #fff;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="card">
+            <div id="image-div">
+                <img id="cover-pic"
+                    src="**image-url**"
+                    alt="cover pic">
+            </div>
+            <div id="upper-div">
+                <div id="product-name">
+                    <h1>**title**</h1>
+                    <h3>**brand**</h3>
+                </div>
+                <div id="product-price">
+                    <h3>$ **price**</h3>
+                </div>
+            </div>
+            <div id="lower-div">
+                <div id="rating-div">
+                    <i class="fa-regular fa-star"></i>
+                    <h5>**rating**/5</h5>
+                </div>
+                <div id="buy-div">
+                    <button id="buy">Buy</button>
+                    <h6>**stock** left</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

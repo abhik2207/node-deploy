@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  background-color: #dbdbdb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  background-color: #fff;
+  border-radius: 30px;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #000;
+  margin: 2vmax 0vmax;
+}
+
+#image-div {
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
+#delete {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: rgb(71, 71, 71);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#delete > i {
+  font-size: 1.5vmax;
+  padding: 0.3vmax;
+  color: #ff0000;
+}
+
+#discount {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: rgb(71, 71, 71);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#discount > p {
+  font-size: 0.8vmax;
+  padding: 0.3vmax;
+  color: #ffffff;
+}
+
+#cover-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#upper-div {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#product-name {
+  display: flex;
+  flex-direction: column;
+}
+
+#product-price {
+  display: flex;
+  color: #00b400;
+}
+
+#lower-div {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#rating-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rating-div > i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#rating-div > h5 {
+  font-size: 15px;
+}
+
+#buy-div {
+  display: flex;
+  align-items: center;
+}
+
+#buy-div > h6 {
+  color: #ff0000;
+  font-size: 15px;
+}
+
+#buy {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 50px;
+  background-color: rgb(255, 115, 0);
+  color: #fff;
+  font-size: 20px;
+  margin-right: 8px;
+}
